@@ -19,6 +19,14 @@ As API's são extremamente úteis na vida de um programador, visto que elas nos 
 **Exemplo:** Supomos que um analista de dados do seu time precisa criar uma análise de sentimentos baseada nos tweets com a hashtag pastelariadedados, então ela te pede para extrair os tweets dos últimos 5 dias com a determinada hashtag. Já imaginou ter que construir uma conexão com o twitter começando do zero? Pois é, acredito que seria bem trabalhoso e bem complicado, e ainda necessitaria da permissão deles. É para solucionar esse tipo de problema que existem as API's! O twitter já possui uma maneira e conjunto de regras para você se comunicar diretamente com ele e extrair esses tweets. Desenvolvida por eles, a API segue seus respectivos protocolos de segurança com o intuito dos solicitantes não terem que passar por nenhum processo burocrático e de desenvolvimento para ter acesso aos dados.
 
 ### Protocolos de Requisição
-Para solicitar dados de uma API, é necessário utilizar algum tipo de protocolo, que nada mais do que um conjunto de regras que deveram ser executados para que o servidor da aplicação te retorne os dados solicitados.
+Para solicitar dados de uma API, é necessário utilizar algum tipo de protocolo, que contém uma série de regras que deverão ser executadas para que o servidor da aplicação te retorne os dados solicitados.
 
-Atualmente, o protocolo de solicitação mais utilizado pelas API's Web vem sendo o **HTTP(HyperText Transfer Protocol)**.
+Atualmente, o protocolo de solicitação mais utilizado pelas API's Web vem sendo o **HTTP(HyperText Transfer Protocol)**. Para saber mais sobre o HTTP recomendo este artigo: https://rockcontent.com/br/blog/http/
+
+#### Tipos de Requisição
+
+O protocolo HTTP aceita quatro tipos ou métodos de requisições que são:
+- **GET**: Método utilizado para coletar dados da aplicação que recebeu a requisição.
+- **POST**: Método utilizado para coletar dados da aplicação que recebeu a requisição (Vamos ver a diferença entre ele e o GET mais abaixo)
+- **PUT**: Método utiliza para enviar algum dado à aplicação que está recebendo a requisição.
+- **DELETE**: Método utiliado para deletar algum dado da aplicação que está recebendo a requisição.
